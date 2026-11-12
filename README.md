@@ -1,25 +1,39 @@
 # ML Practice Programs
 
-Foundational ML algorithms implemented from scratch in NumPy — no sklearn, no magic. Built to understand what's actually happening inside the models.
+**Small NumPy implementations of foundational machine-learning algorithms.**
+
+[![License](https://img.shields.io/badge/license-see%20LICENSE-lightgrey)](LICENSE)
+
+This repository contains compact programs for understanding the mechanics behind common supervised-learning methods, without relying on scikit-learn abstractions.
 
 ## Programs
 
-| File | Algorithm | Concept |
-|------|-----------|---------|
-| `linear_regression.py` | Linear Regression | Gradient descent, MSE |
-| `knn_classifier.py` | K-Nearest Neighbours | Euclidean distance, majority vote |
-| `naive_bayes.py` | Gaussian Naive Bayes | Bayes theorem, log-likelihood |
+| File | Algorithm | Main concepts |
+|---|---|---|
+| `linear_regression.py` | Linear regression | Gradient descent, mean squared error |
+| `knn_classifier.py` | K-nearest neighbours | Distance calculation, majority vote |
+| `naive_bayes.py` | Gaussian Naive Bayes | Bayes' theorem, likelihoods |
 
-## Run Any Program
+## Quick Start
 
 ```bash
+git clone https://github.com/Gitcoder12/ML-Practice-Programs.git
+cd ML-Practice-Programs
+pip install -r requirements.txt
+
 python programs/linear_regression.py
 python programs/knn_classifier.py
 python programs/naive_bayes.py
 ```
 
-Requires: `numpy` only.
+## Tech Stack
 
-## Author
+Python · NumPy
 
-Dharavath Satvik — M.Tech CSE, Amity Hyderabad
+## Learning Goal
+
+Each program is intended to make the data flow, mathematical operations, and prediction steps easier to inspect. The implementations are educational exercises, not optimized production estimators.
+
+## License
+
+See [LICENSE](LICENSE).
