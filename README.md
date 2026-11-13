@@ -46,3 +46,17 @@ See [LICENSE](LICENSE).
 - [Company and team fit](COMPANY_FIT.md) · [README explanation draft](README_ADDENDUM_DRAFT.md)
 - [README quality checklist](README_QUALITY_CHECKLIST.md)
 - [Contributing](CONTRIBUTING.md) · [Agent instructions](AGENTS.md) · [Agent skills](SKILLS.md)
+
+## Understanding the project
+
+### In plain language
+
+A learning repository with small NumPy implementations of basic machine-learning algorithms so students can see how the maths works under the hood.
+
+### Technical and research view
+
+Compact Python/NumPy implementations including linear regression, k-nearest neighbours and Gaussian Naive Bayes. The repository is educational and should prioritise mathematical clarity, deterministic examples and comparison with trusted reference implementations over production packaging.
+
+For each algorithm, document inputs and shapes, objective/loss, update rule or prediction rule, complexity, assumptions and numerical limitations. Include one tiny hand-checkable example.
+
+See [FEATURE_UPGRADE_PLAN.md](FEATURE_UPGRADE_PLAN.md), [ACTIVITY_LOG.md](ACTIVITY_LOG.md), [COMPANY_FIT.md](COMPANY_FIT.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for further technical and collaboration detail.
