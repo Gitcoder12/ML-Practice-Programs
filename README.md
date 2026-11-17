@@ -36,3 +36,22 @@ This section supplements the maintainer-authored README above. The original text
 - Mark unverified sources, identifiers, metrics, benchmark results and external claims as unknown/unverified rather than guessing.
 - Verify setup, execution, tests and public claims against the exact current commit before using this repository in a job, research or academic application.
 - See [MODEL_AUDIT_ROUTER.md](MODEL_AUDIT_ROUTER.md) for independent model review instructions and the merge gate.
+
+---
+
+## Engineering Audit & Handover — 2026-11-17
+
+**Review scope:** default branch `main`; static inspection of `programs/knn_classifier.py`. Runtime tests were not executed.
+
+### Confirmed findings
+- `KNNClassifier.fit()` stores arrays without checking that inputs are non-empty, two-dimensional, length-aligned, or shape-compatible.
+- `predict_single()` assumes `fit()` has already been called. Calling it before fitting will fail indirectly rather than raising a clear model-state error.
+- When `k` exceeds the number of training samples, slicing silently uses all available samples instead of rejecting or warning about the configuration.
+- The example uses a seeded synthetic two-class dataset; its printed accuracy is a demonstration result, not a benchmark on a real dataset.
+
+### Next actions
+1. Validate training/prediction shapes, empty arrays, label alignment, and fitted state.
+2. Define and test behavior for `k > n_samples` and deterministic vote ties.
+3. Add unit tests for distance, fit, prediction, invalid inputs, and the other algorithms.
+
+**Verification status:** static KNN inspection only; example execution and automated tests remain unverified.
