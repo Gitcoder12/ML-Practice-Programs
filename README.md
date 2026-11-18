@@ -55,3 +55,10 @@ This section supplements the maintainer-authored README above. The original text
 3. Add unit tests for distance, fit, prediction, invalid inputs, and the other algorithms.
 
 **Verification status:** static KNN inspection only; example execution and automated tests remain unverified.
+
+---
+
+## Examples Used
+- Predicting house prices with linear regression
+- Classifying a sample using k-nearest neighbours
+- Applying Bayes' theorem to spam classification
