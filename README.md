@@ -55,3 +55,23 @@ This section supplements the maintainer-authored README above. The original text
 3. Add unit tests for distance, fit, prediction, invalid inputs, and the other algorithms.
 
 **Verification status:** static KNN inspection only; example execution and automated tests remain unverified.
+
+
+---
+
+## Branch Activity & Development History
+
+**Audit date:** 2026-11-18 · **Comparison base:** `main`
+
+| Branch | Difference from `main` | Observed work / changed paths |
+|---|---:|---|
+| `docs/portfolio-operating-kit-2026-11-13` | 4 ahead / 3 behind | Activity log, agent guidance, company-fit notes, feature plan, README support docs and skills; README has removals as well as additions on this branch |
+| `docs/project-status-audit20261116` | Comparison unavailable | GitHub returned 404 for the comparison; recheck branch existence |
+| `docs/status-inventory-2026-11-16-v1` | 1 / 1 | Project status inventory: `PROJECT_STATUS.md` |
+
+### Open pull requests observed during this audit
+
+- [PR #2 — project status snapshot](https://github.com/Gitcoder12/ML-Practice-Programs/pull/2)
+- [PR #1 — learning roadmap and contributor handbook](https://github.com/Gitcoder12/ML-Practice-Programs/pull/1)
+
+**Verification boundary:** This records Git metadata and changed paths only. Review exact PR head/base and CI before merging. No branches have been merged or deleted by this documentation update.
