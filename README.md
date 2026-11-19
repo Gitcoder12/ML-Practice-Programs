@@ -62,3 +62,27 @@ This section supplements the maintainer-authored README above. The original text
 - Predicting house prices with linear regression
 - Classifying a sample using k-nearest neighbours
 - Applying Bayes' theorem to spam classification
+
+
+---
+
+## Comparison with Existing Open-Source Projects
+
+ML Practice Programs is a small educational collection implementing foundational algorithms in NumPy to expose the underlying mathematics and mechanics. These projects provide relevant implementation and learning comparisons.
+
+| Project | Established focus | Relationship to ML Practice Programs |
+|---|---|---|
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn) | Production-oriented classical machine-learning algorithms and evaluation utilities | Far broader, optimized and tested library; this repository intentionally prioritizes readable educational implementations over feature completeness or production performance. |
+| [NumPy](https://github.com/numpy/numpy) | Core numerical arrays and vectorized computation in Python | The numerical foundation used by this project; the repository builds selected ML algorithms on top of NumPy rather than reimplementing array primitives. |
+| [micrograd](https://github.com/karpathy/micrograd) | A compact educational autograd engine and neural-network example | A useful teaching reference for understanding model internals; this repository focuses on classical algorithms such as regression, KNN and Naive Bayes. |
+
+### Where this repository is different
+- **From-scratch learning:** selected algorithms are implemented directly with NumPy rather than hidden behind a high-level estimator API.
+- **Small, inspectable examples:** each program is intended to isolate a core concept such as gradient descent, distance calculation or Bayes' rule.
+- **Classical ML emphasis:** the current set is a compact foundation rather than a broad model zoo.
+
+### Where established projects are stronger
+scikit-learn provides much broader algorithm coverage, optimized implementations, extensive validation and mature evaluation utilities. NumPy is foundational infrastructure, not a direct competitor. This repository should not claim better accuracy, speed or reliability.
+
+### Evidence and limitations
+Add unit tests and reference comparisons for each algorithm, including shape validation, edge cases, deterministic behavior and numerical stability. Demonstration accuracy on synthetic data is not a generalization benchmark. This is an educational-scope comparison, not a performance ranking.
